@@ -9,8 +9,16 @@
   "bin": {
     "evershop": "./bin/evershop"
   },
-
-  
+  "scripts": {
+    "prepublishOnly": "node prepublish.js",
+    "prepack": "node prepublish.js",
+    "dev": "evershop dev",
+    "build": "evershop build",
+    "start": "evershop start",
+    "user:create": "evershop user:create",
+    "user:changePassword": "evershop user:changePassword",
+    "test": "jest"
+  },
   "author": "The Nguyen (https://evershop.io)",
   "license": "GNU GENERAL PUBLIC LICENSE 3.0",
   "repository": {
